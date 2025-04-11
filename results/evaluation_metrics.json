@@ -1,0 +1,1 @@
+{"num_aspirants":20.0,"num_recommendations":212.0,"precision@k":0.0583333333,"recall@k":0.125,"ndcg@k":0.1193426404,"learning_style_match_rate":0.6666666667,"subject_match_rate":0.3166666667,"college_match_rate":0.6916666667,"avg_similarity":0.5911723348}

@@ -1,0 +1,44 @@
+2025-04-11 23:44:42,326 - __main__ - INFO - Starting CLAT Mentor Recommendation System
+2025-04-11 23:44:42,326 - __main__ - INFO - Output will be saved to: C:\Anchal\CLAT\clat_task1\results
+2025-04-11 23:44:42,328 - __main__ - INFO - Generating sample data...
+2025-04-11 23:44:42,337 - __main__ - INFO - Saved raw data to results
+2025-04-11 23:44:42,337 - __main__ - INFO - Preprocessing data...
+2025-04-11 23:44:42,356 - __main__ - INFO - Initializing recommender...
+2025-04-11 23:44:42,359 - __main__ - INFO - Generating recommendations...
+2025-04-11 23:44:42,359 - __main__ - ERROR - Error in recommendation pipeline: batch_recommend() got an unexpected keyword argument 'top_n'
+Traceback (most recent call last):
+  File "C:\Anchal\CLAT\clat_task1\main.py", line 198, in main
+    results = run_recommendation_pipeline(aspirants, mentors, CONFIG, output_dir)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Anchal\CLAT\clat_task1\main.py", line 133, in run_recommendation_pipeline
+    recommendations = batch_recommend(
+                      ^^^^^^^^^^^^^^^^
+TypeError: batch_recommend() got an unexpected keyword argument 'top_n'
+2025-04-11 23:46:46,027 - __main__ - INFO - Starting CLAT Mentor Recommendation System
+2025-04-11 23:46:46,028 - __main__ - INFO - Output will be saved to: C:\Anchal\CLAT\clat_task1\results
+2025-04-11 23:46:46,028 - __main__ - INFO - Generating sample data...
+2025-04-11 23:46:46,036 - __main__ - INFO - Saved raw data to results
+2025-04-11 23:46:46,036 - __main__ - INFO - Preprocessing data...
+2025-04-11 23:46:46,044 - __main__ - INFO - Initializing recommender...
+2025-04-11 23:46:46,045 - __main__ - INFO - Generating recommendations...
+2025-04-11 23:46:46,432 - __main__ - INFO - Saved recommendations to results\recommendations.csv
+2025-04-11 23:46:46,432 - __main__ - INFO - Evaluating recommendations...
+2025-04-11 23:46:46,505 - __main__ - INFO - Saved evaluation metrics to results\evaluation_metrics.json
+2025-04-11 23:46:46,505 - __main__ - INFO - Generating visualizations...
+2025-04-11 23:46:48,306 - __main__ - INFO - 
+=== Pipeline Execution Summary ===
+2025-04-11 23:46:48,306 - __main__ - INFO - Generated recommendations for 100 aspirants
+2025-04-11 23:46:48,306 - __main__ - INFO - Using 20 mentors in the pool
+2025-04-11 23:46:48,330 - __main__ - INFO - 
+Evaluation Metrics:
+2025-04-11 23:46:48,330 - __main__ - INFO - num_aspirants            : 20.000
+2025-04-11 23:46:48,330 - __main__ - INFO - num_recommendations      : 212.000
+2025-04-11 23:46:48,330 - __main__ - INFO - precision@k              : 0.058
+2025-04-11 23:46:48,330 - __main__ - INFO - recall@k                 : 0.125
+2025-04-11 23:46:48,331 - __main__ - INFO - ndcg@k                   : 0.119
+2025-04-11 23:46:48,331 - __main__ - INFO - learning_style_match_rate: 0.667
+2025-04-11 23:46:48,331 - __main__ - INFO - subject_match_rate       : 0.317
+2025-04-11 23:46:48,331 - __main__ - INFO - college_match_rate       : 0.692
+2025-04-11 23:46:48,331 - __main__ - INFO - avg_similarity           : 0.591
+2025-04-11 23:46:48,331 - __main__ - INFO - 
+Recommendation system completed successfully!
