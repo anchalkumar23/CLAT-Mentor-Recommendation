@@ -18,7 +18,6 @@ An AI-powered recommendation system that matches CLAT aspirants with ideal mento
 
 ## 🛠️ Installation
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/anchalkumar23/CLAT-Mentor-Recommendation.git
 cd CLAT-Mentor-Recommendation
